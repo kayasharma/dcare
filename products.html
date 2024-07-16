@@ -7,7 +7,121 @@
   </title>
   
 
-    <link rel="stylesheet" type="text/css" href="products.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <script type="text/javascript" src="js/product.js"></script>
+  <style>
+.body{
+  margin: 0px;
+  padding: 0px;
+  background-color: pink;
+
+}
+.a{
+  text-decoration: none;
+}
+.box{
+width: 300px;
+box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+
+
+
+
+}
+.slideimg{
+height: 450px;
+position: relative;
+}
+.slideimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.detailbox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+}
+.type a{
+  color: purple;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+  text-decoration: none;
+
+}
+.overlay{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 95, 236, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buybtn{
+  width: 160px;
+  height: 40px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #ffffff;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  box-shadow:2px 2px 30px rgba(0, 0, 0, 0.2) ;
+
+
+
+}
+.buybtn:hover{
+  color: #ffffff;
+  background-color: #f15fa3;
+  transition: all ease 0.3s;
+
+
+}
+.overlay{
+  visibility: hidden;
+}
+.slideimg:hover .overlay{
+  visibility: visible;
+}
+
+.ediii{
+  display: flex;
+  list-style-type: none;
+
+
+}
+.iteam1{
+  margin-top: 100px;
+  
+}
+.iteam2{
+  margin-top: 700px;
+}
+ 
+  </style>
+
+
 
 </head>
 
@@ -34,7 +148,7 @@
 
   
  </div></li>
-<li class="iteam1">
+<li class="iteam2">
   <div class="box">
    <div class="slideimg">
      <img src="image1.jpg" alt="1">
@@ -46,7 +160,7 @@
    </div>
      <div class="detailbox">
        <div class="type">
-         <a href="#">facewash</a>
+         <a href="#">sunscreen</a>
              <span>new arrival</span>
        </div>
 
@@ -67,7 +181,28 @@
    </div>
      <div class="detailbox">
        <div class="type">
-         <a href="#">facewash</a>
+         <a href="#">moisturisers</a>
+             <span>new arrival</span>
+       </div>
+
+     </div>
+
+  
+ </div>
+</li>
+<li class="iteam2">
+  <div class="box">
+   <div class="slideimg">
+     <img src="image1.jpg" alt="1">
+     <div class="overlay">
+       <a href="#" class="buybtn">show products
+         
+       </a>
+     </div>
+   </div>
+     <div class="detailbox">
+       <div class="type">
+         <a href="#">toner</a>
              <span>new arrival</span>
        </div>
 
@@ -88,28 +223,7 @@
    </div>
      <div class="detailbox">
        <div class="type">
-         <a href="#">facewash</a>
-             <span>new arrival</span>
-       </div>
-
-     </div>
-
-  
- </div>
-</li>
-<li class="iteam1">
-  <div class="box">
-   <div class="slideimg">
-     <img src="image1.jpg" alt="1">
-     <div class="overlay">
-       <a href="#" class="buybtn">show products
-         
-       </a>
-     </div>
-   </div>
-     <div class="detailbox">
-       <div class="type">
-         <a href="#">facewash</a>
+         <a href="#">serum</a>
              <span>new arrival</span>
        </div>
 
