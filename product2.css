@@ -17,7 +17,7 @@ body {
     font-family: var(--font1);
 }
 
-.grandparents {
+.productsSec {
     padding: 50px 20px;
 }
 
@@ -27,14 +27,14 @@ h1 {
     padding: 50px 0;
 }
 
-.parents {
+.products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px; /* Add gap between child elements */
 }
 
-.child {
+.product {
     position: relative;
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -42,13 +42,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-.child img {
+.product img {
     width: 300px;
     height: 400px;
     display: block;
 }
 
-.overlay {
+.PrOverlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,11 +63,11 @@ h1 {
     transition: opacity 0.3s ease;
 }
 
-.child:hover .overlay {
+.product:hover .PrOverlay {
     opacity: 1;
 }
 
-.overlay a {
+.PrOverlay a {
     padding: 10px 20px;
     font-family: var(--font2);
     font-size: 16px;
@@ -81,11 +81,11 @@ h1 {
     text-decoration: none;
 }
 
-.overlay a:hover {
+.PrOverlay a:hover {
     background-color: var(--color3);
 }
 
-.overlay h3 {
+.PrOverlay h3 {
     font-family: var(--font2);
     color: var(--color2);
     margin-top: 10px;
