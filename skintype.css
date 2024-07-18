@@ -1,0 +1,106 @@
+:root {
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Oswald', sans-serif;
+    --color1: black;
+    --color2: white;
+    --color3: gray;
+    --color4: darkgray;
+    --btn-bg-color: white;
+    --btn-hover-bg-color: skyblue;
+    --btn-color: skyblue;
+    --btn-hover-color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.heading {
+    
+    width: 600px;
+    color: var(--color1);
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 500px;
+    text-align: center;
+    padding-top: 18px;
+    border-radius: 13px;
+    font-family: var(--font1);
+}
+
+.parents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+.child {
+    width: 360px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.child:hover {
+    transform: translateY(-20px);
+}
+
+.child img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color2);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background color to make text more readable */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: var(--font2);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color1);
+    color: var(--color2);
+    font-family: var(--font1);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+    transform: scale(1.1);
+}
