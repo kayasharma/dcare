@@ -104,3 +104,35 @@ body {
     color: var(--color1);
     transform: scale(1.1);
 }
+footer {
+    margin-top: 40px;
+    font-family: var(--font2);
+  background-color:var(--color3);
+  color:white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+#assessment {
+  background-color:var(--color1);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#assessment:hover {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+
+span{
+  font-size: 20px;
+}
+
