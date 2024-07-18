@@ -29,8 +29,10 @@ h1 {
 
 .products {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
     gap: 50px; /* Add gap between child elements */
 }
 
