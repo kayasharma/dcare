@@ -1,0 +1,53 @@
+:root {
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Oswald', sans-serif;
+    --color1: black;
+    --color2: white;
+    --color3: gray;
+    --color4: darkgray;
+    --btn-bg-color: white;
+    --btn-hover-bg-color: skyblue;
+    --btn-color: skyblue;
+    --btn-hover-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  var(--color4);
+}
+.logoContainer{
+    display: flex;
+}
+.logo{
+    font-family: var(--font1);
+    font-size: 7vmin;
+    font-weight: 800;
+}
+
+nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--color1);
+    margin-top: 5vmax;
+   
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmax;
+    font-family: var(--font1);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.5vmax;
+    color: var(--color2);
+
+}
